@@ -1,4 +1,10 @@
-<h2>Chart</h2>
+<app-sidenav (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
+<app-body
+    [collapsed]="isSideNavCollapsed"
+    [screenWidth]="screenWidth"
+></app-body>
+
+<!-- <h2>Chart</h2>
 <div style="width:50%;">
   <canvas id="myChart" width="400" height="100"></canvas>
-</div>
+</div> -->

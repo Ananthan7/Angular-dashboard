@@ -1,24 +1,42 @@
 import { Component, ViewChild } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
+import { Subscription } from 'rxjs';
 import { DataServService } from './service/data-serv.service';
 Chart.register(...registerables);
+interface SideNavToggle {
+  screenWidth: number;
+  collapsed: boolean;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 }) 
 export class AppComponent {
+  // responseData$: Subscription;
 
   constructor(private dataServ: DataServService) { 
    
   }
 
+  title = 'sidenav';
+
+  isSideNavCollapsed = false;
+  screenWidth = 0;
+
+  onToggleSideNav(data: SideNavToggle): void {
+    this.screenWidth = data.screenWidth;
+    this.isSideNavCollapsed = data.collapsed;
+  }
+  /**chart section starts */
+
   ngOnInit(): void {
     this.renderChart()
-    this.dataServ.getChartData()
-    .subscribe((response)=>{
-      console.log(response);
-    });
+    // this.dataServ.getChartData()
+    // .subscribe((response)=>{
+    //   console.log(response);
+    // });
   }
 
   getChartElement(){
