@@ -8,7 +8,12 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
-        }
+        },
+        "stylePreprocessorOptions": {
+          "includePaths": [
+            "./node_modules"
+          ]
+        }  
       },
       "root": "",
       "sourceRoot": "src",
@@ -30,7 +35,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/chart.js/dist/chart.js"
+            ]
           },
           "configurations": {
             "production": {
