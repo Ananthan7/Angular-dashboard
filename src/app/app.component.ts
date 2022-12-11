@@ -41,8 +41,10 @@ export class AppComponent {
 
   getChartElement(){
     let canvas:any = document.getElementById('myChart');
-    let ctx:any = canvas.getContext('2d');
-    return ctx
+    if(canvas){
+      let ctx:any = canvas.getContext('2d');
+      return ctx
+    }
   }
   /**
    *  renderChart function will load the chart data
