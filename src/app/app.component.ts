@@ -1,7 +1,7 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
 import { Subscription } from 'rxjs';
-import { DataServService } from './service/data-serv.service';
+import { DataServService } from './shared/service/data-serv.service';
 Chart.register(...registerables);
 interface SideNavToggle {
   screenWidth: number;

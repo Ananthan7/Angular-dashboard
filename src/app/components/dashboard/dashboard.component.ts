@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ChartConfiguration, ChartType} from 'chart.js';
-import {BaseChartDirective} from 'ng2-charts'
+import { ChartConfiguration, ChartType } from 'chart.js';
+import { BaseChartDirective } from 'ng2-charts'
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -9,25 +9,38 @@ import {BaseChartDirective} from 'ng2-charts'
 export class DashboardComponent implements OnInit {
   public lineChartData: ChartConfiguration['data'] = {
     datasets: [
-      {
-        data: [1,2,3,4,5],
-        label: `Price Trends`,
-        backgroundColor: 'rgba(148,159,177,0.2)',
-        borderColor: '#009688',
-        pointBackgroundColor: '#009688',
-        pointBorderColor: '#009688',
-        pointHoverBackgroundColor: '#009688',
-        pointHoverBorderColor: '#009688',
-
-      }
+      { 
+        "data": [0, 30, 20, 40, 35, 45, 33, 0, 0],
+        "label": "Bar 1", 
+        "backgroundColor": 'rgba(148,159,177,0.2)',
+        "borderColor": '#009688',
+        "pointBackgroundColor": '#009688',
+        "pointBorderColor": '#009688',
+        "pointHoverBackgroundColor": '#009688',
+        "pointHoverBorderColor": '#009688',
+      },
+      { "data": [0, 50, 60, 55, 59, 30, 40], "label": "Bar 2", "pointBorderColor": '#009688' },
     ],
-    labels: ['A','B','C','D','E']
+    labels: [ "Mon", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
   };
   public lineChartOptions: ChartConfiguration['options'] = {
+    scales: {
+      y: {
+        display: false,
+        grid: {
+          display: false
+        }
+      },
+      x: {
+        grid: {
+          display: false
+        }
+      },
+    },
     elements: {
       point: {
         radius: 1
-      }
+      },
     },
 
     plugins: {
