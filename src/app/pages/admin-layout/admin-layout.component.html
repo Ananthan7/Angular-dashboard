@@ -1,2 +1,5 @@
-<p>admin-layout works!</p>
-<app-navbar></app-navbar>
+<app-sidenav (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
+<app-body
+    [collapsed]="isSideNavCollapsed"
+    [screenWidth]="screenWidth"
+></app-body>
