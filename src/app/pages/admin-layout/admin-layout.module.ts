@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AdminLayoutRoutingModule } from './admin-layout-routing.module';
 import { AdminLayoutComponent } from './admin-layout.component';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 
 @NgModule({
@@ -11,7 +12,9 @@ import { AdminLayoutComponent } from './admin-layout.component';
   ],
   imports: [
     CommonModule,
-    AdminLayoutRoutingModule
-  ]
+    AdminLayoutRoutingModule,
+    ComponentsModule
+  ],
+  bootstrap: [AdminLayoutComponent]
 })
 export class AdminLayoutModule { }
