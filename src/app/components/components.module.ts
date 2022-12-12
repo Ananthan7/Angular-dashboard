@@ -19,7 +19,6 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { BodyComponent } from './body/body.component';
-// import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductsComponent } from './products/products.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { CoupensComponent } from './coupens/coupens.component';
@@ -29,7 +28,6 @@ import { CoupensComponent } from './coupens/coupens.component';
     NavbarComponent,
     SidenavComponent,
     BodyComponent,
-    // DashboardComponent,
     ProductsComponent,
     StatisticsComponent,
     CoupensComponent,
@@ -57,7 +55,6 @@ import { CoupensComponent } from './coupens/coupens.component';
     NavbarComponent,
     SidenavComponent,
     BodyComponent,
-    // DashboardComponent,
     ProductsComponent,
     StatisticsComponent,
     CoupensComponent,

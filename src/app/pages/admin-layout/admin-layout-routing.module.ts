@@ -5,8 +5,12 @@ import { ProductsComponent } from 'src/app/components/products/products.componen
 import { StatisticsComponent } from 'src/app/components/statistics/statistics.component';
 
 const routes: Routes = [
-  // {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
-  {path: 'dashboard', component: DashboardComponent},
+  {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+  {
+    path: 'dashboard',
+    loadChildren: () => import('../../components/dashboard/dashboard.module').then(m => m.DashboardModule)
+  },
+  // {path: 'dashboard', component: DashboardComponent},
   {path: 'products', component: ProductsComponent},
   {path: 'statistics', component: StatisticsComponent},
 ];
