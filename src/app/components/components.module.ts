@@ -19,18 +19,12 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { BodyComponent } from './body/body.component';
-import { ProductsComponent } from './products/products.component';
-import { StatisticsComponent } from './statistics/statistics.component';
-import { CoupensComponent } from './coupens/coupens.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
     SidenavComponent,
     BodyComponent,
-    ProductsComponent,
-    StatisticsComponent,
-    CoupensComponent,
   ],
   imports: [
     CommonModule,
@@ -55,9 +49,6 @@ import { CoupensComponent } from './coupens/coupens.component';
     NavbarComponent,
     SidenavComponent,
     BodyComponent,
-    ProductsComponent,
-    StatisticsComponent,
-    CoupensComponent,
   ]
 })
 export class ComponentsModule { }
