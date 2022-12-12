@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgChartsModule } from 'ng2-charts';
 import { AdminLayoutModule } from './pages/admin-layout/admin-layout.module';
 @NgModule({
   declarations: [
@@ -16,9 +15,7 @@ import { AdminLayoutModule } from './pages/admin-layout/admin-layout.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    NgChartsModule,
     AdminLayoutModule
-   
   ],
   providers: [],
   bootstrap: [AppComponent],
