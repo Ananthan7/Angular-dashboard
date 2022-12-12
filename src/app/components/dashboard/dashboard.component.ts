@@ -21,7 +21,7 @@ export class DashboardComponent implements OnInit {
       },
       { "data": [0, 50, 60, 55, 59, 30, 40], "label": "Bar 2", "pointBorderColor": '#009688' },
     ],
-    labels: [ "Mon", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    labels: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
   };
   public lineChartOptions: ChartConfiguration['options'] = {
     scales: {
