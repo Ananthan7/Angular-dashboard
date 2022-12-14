@@ -24,6 +24,7 @@ export class DashboardComponent implements OnInit {
     labels: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
   };
   public lineChartOptions: ChartConfiguration['options'] = {
+    responsive: true,
     scales: {
       y: {
         display: false,
@@ -37,11 +38,11 @@ export class DashboardComponent implements OnInit {
         }
       },
     },
-    elements: {
-      point: {
-        radius: 1
-      },
-    },
+    // elements: {
+    //   point: {
+    //     radius: 1
+    //   },
+    // },
 
     plugins: {
       legend: { display: true },
