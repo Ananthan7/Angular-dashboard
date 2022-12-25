@@ -61,6 +61,40 @@
   height: 45%;
 }
 
+.content_a{
+  font-family: poppins-bold, sans-serif !important;
+  font-size: 23px;
+  font-weight: bold;
+  color: white;
+}
+.content_b{
+  font-family: poppins-bold, sans-serif !important;
+  font-size: 21px;
+  color: white;
+  font-weight: lighter;
+}
+         
+.content_welcome{
+  position: relative;
+  bottom: 100px;
+  margin-left: 31%;
+  width: 50%;
+  height: 100px;
+  text-align: left;
+  color: white;
+  .Welcome{
+    font-size: 22px;
+    font-weight: 30;
+  }
+  .Suntech{
+    font-size: 59px;
+    font-weight: 450;
+  }
+  .Build{
+    font-size: 10px; 
+  }
+}
+
 // @media (min-height: 300px) and (max-height: 450px) {
 //   .intro {
 //     height: auto;
@@ -71,4 +105,4 @@
 //   .fas.fa-laptop {
 //     font-size: 12rem;
 //   }
-// };
+// }
