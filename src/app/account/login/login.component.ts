@@ -25,5 +25,9 @@ export class LoginComponent implements OnInit {
     return this.validationForm.get('lastName')!;
   }
 
+  signIn(){
+    console.log('signIn');
+    
+  }
   
 }
