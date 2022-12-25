@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdminLayoutComponent } from './pages/admin-layout/admin-layout.component';
+import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: AdminLayoutComponent,
     // canActivate: [AuthGuard],
-    children: [
-      {
-        path: '',
-        loadChildren: () => import('./pages/admin-layout/admin-layout.module').then(m => m.AdminLayoutModule)
-      }
-    ]
+    loadChildren: () => import('./account/account.module').then(m => m.AccountModule)
+    
   },
- 
+  {
+    path: 'admin',
+    // canActivate: [AuthGuard],
+    loadChildren: () => import('./layout/admin-layout/admin-layout.module').then(m => m.AdminLayoutModule)
+  },
+ //D:\Ananthan\Angular\suntech-dashboard\src\app\account\account.module.ts
 ];
 
 @NgModule({

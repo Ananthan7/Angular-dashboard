@@ -5,7 +5,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AdminLayoutModule } from './pages/admin-layout/admin-layout.module';
+// import { AdminLayoutModule } from './layout/admin-layout/admin-layout.module';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +17,7 @@ import { AdminLayoutModule } from './pages/admin-layout/admin-layout.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    AdminLayoutModule
+    // AdminLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
