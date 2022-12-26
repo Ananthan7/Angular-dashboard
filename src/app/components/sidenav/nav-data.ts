@@ -1,37 +1,45 @@
-export const navbarData = [
+export const navbarUserData = [
     {
         routeLink: 'dashboard',
         icon: 'fal fa-home',
-        label: 'Dashboard'
+        label: 'HOME'
     },
     {
         routeLink: 'products',
-        icon: 'fal fa-box-open',
-        label: 'Products'
+        icon: 'fal fa-chart-pie',
+        label: 'OVERVIEW'
     },
     {
         routeLink: 'statistics',
         icon: 'fal fa-chart-bar',
-        label: 'Statistics'
+        label: 'KPI EVOLUTION'
     },
     {
         routeLink: 'coupens',
         icon: 'fal fa-tags',
-        label: 'Coupens'
+        label: 'SHOP MANAGER'
     },
     {
         routeLink: 'pages',
-        icon: 'fal fa-file',
-        label: 'Pages'
+        icon: 'fal fa-chart-bar',
+        label: 'SALES'
     },
     {
         routeLink: 'media',
-        icon: 'fal fa-camera',
-        label: 'Media'
+        icon: 'fal fa-user',
+        label: 'INVENTORY'
     },
     {
         routeLink: 'settings',
         icon: 'fal fa-cog',
-        label: 'Settings'
+        label: 'SETTINGS'
+    },
+];
+
+export const navbarData = [
+    {
+        routeLink: 'settings',
+        icon: 'fal fa-cog',
+        label: 'SETTINGS'
     },
 ];
