@@ -3,8 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'account', pathMatch: 'full' },
   {
-    path: '',
+    path: 'account',
     // canActivate: [AuthGuard],
     loadChildren: () => import('./account/account.module').then(m => m.AccountModule)
     
