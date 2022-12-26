@@ -57,7 +57,10 @@ body{
     // font-family: 'Roboto',sans-serif;
     font-family: 'Poppins',sans-serif;
 }
-
-
-
 html, body { height: 100%; }
+
+/* Common used classed */
+.commonColor{
+  font-family: poppins-bold, sans-serif !important;
+  color: #336699;
+}

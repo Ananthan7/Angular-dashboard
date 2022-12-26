@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="mb-3">
+                <span class="p-float-label">
+                    <input type="text" id="inputtext-left" pInputText>
+                    <label for="inputtext-left">Enter a Role name</label>
+                </span>
+            </div>
+            <div class="mb-3">
+                <span class="p-float-label">
+                    <input type="text" id="inputtext-left" pInputText>
+                    <label for="inputtext-left">Enter Role Description</label>
+                </span>
+            </div>
+            <div class="mb-3">
+                <span class="p-float-label">
+                    <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="cities"optionLabel="name"></p-dropdown>
+                    <label for="dropdown">Choose Status</label>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6 buttonsection">
+            <button pButton type="button" class="p-button-outlined skip"><span>Skip</span></button>
+            <button pButton type="button" class="p-button-raised   ms-3 save"><span>Save</span></button>
+            <!-- <button pButton pRipple type="button" label="Primary" class="p-button-outlined"></button> -->
+        </div>
+    </div>
+</div>

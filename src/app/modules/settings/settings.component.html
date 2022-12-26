@@ -1,1 +1,42 @@
-<h3 class="fw-bold">CONFIGURATION SETTINGS</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <h3 class="fw-bold">CONFIGURATION SETTINGS</h3>
+        </div>
+    </div>
+    <div class="row">
+        <!-- list section starts -->
+        <div class="col-md-3">
+            <p-listbox [options]="cities" (onClick)="listBoxClick($event)" optionLabel="name"
+                [listStyle]="{'max-height':'50%','box-shadow': 'rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px'}"
+                [style]="{'width':'14rem', 'text-transform': 'uppercase'}">
+                <ng-template let-cities pTemplate="item">
+                    <div class="cities-item d-flex">
+                        <i class="  p-1" [class]="cities.icon" style="font-size: 10px;"></i>
+                        <div>{{cities.name}}</div>
+                    </div>
+                </ng-template>
+            </p-listbox>
+        </div>
+        <!-- right content starts -->
+        <div class="col-md-8 me-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title fw-bold commonColor ms-4">{{selectedCityCode}}</h3>
+                   <!-- switch to lists with selected components -->
+                    <div [ngSwitch]="selectedCityCode">
+                        <div *ngSwitchCase="'CREATE NEW ROLE'">
+                            <app-createrole></app-createrole>
+                        </div>
+                        <div *ngSwitchDefault>This is Default</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <h3 class="fw-bold">CONFIGURATION SETTINGS</h3>
+<div class="">
+    <p-listbox [options]="cities"   (ngModel)="selectedCityCode" 
+        (onClick)="listBoxClick($event)" optionLabel="name"></p-listbox>
+</div> -->

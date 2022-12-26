@@ -1,0 +1,35 @@
+:host ::ng-deep {
+
+    .p-listbox .p-listbox-list .p-listbox-item {
+        font-size: 14px;
+        color: #336699;
+        font-family: poppins-bold, sans-serif !important;
+    }
+
+    .p-listbox:hover .p-listbox-list:hover .p-listbox-item:hover {
+        color: #fff;
+        background-color: #336699;
+    }
+
+    .p-float-label {
+        width: 80%;
+
+        i {
+            font-size: 15px;
+        }
+
+        input {
+            height: 20px;
+            width: 100%;
+            // background-color: #e7f6ff7f;
+        }
+
+        .p-dropdown {
+            height: 45px;
+            width: 100%;
+            // background-color: #e7f6ff7f;
+
+        }
+
+    }
+}
