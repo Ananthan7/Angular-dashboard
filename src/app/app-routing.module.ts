@@ -15,7 +15,6 @@ const routes: Routes = [
     // canActivate: [AuthGuard],
     loadChildren: () => import('./layout/admin-layout/admin-layout.module').then(m => m.AdminLayoutModule)
   },
- //D:\Ananthan\Angular\suntech-dashboard\src\app\account\account.module.ts
 ];
 
 @NgModule({
